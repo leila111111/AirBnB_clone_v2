@@ -46,7 +46,7 @@ class DBStorage:
             for obj in list_obj:
                 key = "{}.{}".format(cls.__name__, obj.id)
                 temp[key] = obj
-                
+
         else:
 
             for elem in list_class:
@@ -54,7 +54,7 @@ class DBStorage:
                 for obj in list_obj:
                     key = "{}.{}".format(elem.__name__, obj.id)
                     temp[key] = obj
-                    
+
         return temp
 
     def new(self, obj):
