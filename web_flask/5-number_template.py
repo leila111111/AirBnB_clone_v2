@@ -12,6 +12,7 @@ text variable (replace underscore _ symbols with a space )
 /number_template/<n>: display a HTML page only if n is an integer:
 H1 tag: “Number: n” inside the tag BODY"""
 from flask import Flask
+from flask import render_template
 app = Flask(__name__)
 
 
